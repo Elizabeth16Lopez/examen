@@ -1,0 +1,208 @@
+:root {
+  --verde-limon: #bcf9b6;
+  --verde-oscuro: #1aa243;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--verde-limon);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--verde-oscuro);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+}
+
+header img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+nav {
+  background-color: var(--verde-oscuro);
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--verde-limon);
+  color: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.beneficios-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.beneficios-table th,
+.beneficios-table td {
+  border: 1px solid var(--verde-oscuro);
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.beneficios-table th {
+  background-color: var(--verde-oscuro);
+  color: white;
+}
+
+.beneficios-table img {
+  max-width: 60px;
+  border-radius: 5px;
+}
+
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.catalogo-title {
+  text-align: center;
+  color: var(--verde-oscuro);
+}
+
+.producto {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.carrito-btn {
+  font-size: 20px;
+  color: purple;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer img {
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
+
+.subir-btn {
+  color: var(--verde-oscuro);
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: var(--verde-oscuro);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #147a2e;
+}
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-flex > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+footer hr {
+  margin: 30px auto;
+  border: 0;
+  border-top: 1px solid #a5d6a7;
+  width: 90%;
+}
+
+.footer-bottom {
+  text-align: center;
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tierra viva</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --verde-limon: #bcf9b6;
+      --verde-oscuro: #1aa243;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--verde-limon);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--verde-oscuro);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin: 40px 0 5px;
+      color: white;
+    }
+
+    header p {
+      margin: 0;
+      color: white;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .menu-icon {
+      display: block;
+      width: 30px;
+      height: 25px;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: 20px;
+      z-index: 1000;
+    }
+
+    .menu-icon span {
+      display: block;
+      height: 4px;
+      background-color: white;
+      margin: 5px 0;
+      border-radius: 2px;
+    }
+
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: var(--verde-oscuro);
+      text-align: left;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 998;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav {
+      display: flex;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: var(--verde-limon);
+      color: black;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 200px auto 20px;
+      padding: 0 20px;
+    }
+
+    section {
+      scroll-margin-top: 160px;
+    }
+  </style>
+</head>
+
+<body id="top">
+  <header>
+    <img src="logo.png" alt="Logo de Tierra viva" />
+    <div>
+      <h1>Tierra viva</h1>
+      <p>Donde la vida comienza bajo la tierra🌿</p>
+    </div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <a href="#Inicio">Inicio</a>
+      <a href="#Que-es-la-composta">Qué es la composta</a>
+      <a href="#Como-se-hace-la-composta">Cómo se hace la composta</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#catalogo">Productos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#registro">Registro</a>
+      <a href="#Justificacion">Justificación</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Aquí continúa todo tu contenido de secciones: Inicio, Qué es la composta, etc. -->
+    <!-- No lo repito todo para que no sea tan largo, pero debes pegar tus <section> aquí como en tu versión original. -->
+  </div>
+
+  <footer>
+    <!-- Tu contenido de footer permanece igual -->
+  </footer>
+
+  <!-- ✅ Script que cierra el menú al hacer clic en cualquier enlace -->
+  <script>
+    document.querySelectorAll("nav a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("menu-toggle").checked = false;
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+  </nav>
+  <div class="container">
+    <section id="Inicio">
+      <h2>Inicio</h2>
+      <p>!Bienvenido a Tierra Viva¡</p>
+      <p>Nuestra mision es transformar los residuos organicos en vida nueva, promoviendo el uso de composta como solucion ecologica, accesible y beneficiosa para el planeta. Aqui aprenderas que es la composta, como hacerla y como aprovechar sus beneficios en su hogar, huerto o comunidad.</p>
+      <p>!Cada pequeña accion cuenta. Empieza hoy a cambiar el mundo desde la tierra¡</p>
+    </section>
+
+    <section id="Que-es-la-composta">
+      <h2>Qué es la composta</h2>
+      <p> es el resultado de un proceso natural en el que los restos orgánicos como cáscaras de frutas, verduras, hojas secas y residuos del jardín se transforman en abono natural.</p>
+
+<p>Este abono, rico en nutrientes, mejora la calidad del suelo, ayuda a las plantas a crecer sanas y reduce la cantidad de basura que generamos.</p>
+Compostar es una forma sencilla y ecológica de cuidar el planeta desde casa.
+
+<p>¡La composta es vida que regresa a la tierra! 🌎💚 </p>
+    </section>
+
+    <section id="Como-se-hace-la-composta">
+      <h2>Cómo se hace la composta</h2>
+      <p>La composta ¿Cómo se hace la composta?</p>
+
+<p>Hacer composta en casa es fácil y solo necesitas tres cosas: residuos orgánicos, aire y paciencia.</p>
+
+<p>🪱 Pasos para hacer tu composta:</p>
+
+<p>1. Elige un lugar
+Puede ser un recipiente, una compostera o un espacio en tu jardín.</p>
+
+
+<p>2. Coloca los materiales en capas
+
+Materiales secos (cafés): hojas secas, cartón, ramas pequeñas.
+
+Materiales húmedos (verdes): restos de frutas, verduras, cáscaras de huevo, café usado.</p>
+
+<p>3. Humedece ligeramente
+La composta debe estar húmeda como una esponja, pero sin exceso de agua.</p>
+
+
+<p>4. Remueve cada semana
+Usa una pala o tenedor para mezclar. Así entra aire y se acelera el proceso.</p>
+
+
+<p>5. Espera y observa
+En unas 8 a 12 semanas tendrás un abono oscuro, sin mal olor y con olor a tierra fresca.</p>
+
+
+<p>🌼 Tip: No pongas carne, huesos, lácteos ni aceite. Pueden atraer plagas y generar mal olor.</p>
+<p>Y listo ya puedes usar tu composta para mejorar tus plantas y tu jardin</p>
+    </section>
+
+    <section id="beneficios">
+      <h2>Beneficios de la Composta</h2>
+      <table class="beneficios-table">
+        <tr>
+          <th>Imagen</th><th>Beneficio</th><th>Descripción</th>
+        </tr>
+        <tr>
+          <td><img src="imagenes/reduce.jpg" alt="Residuos"></td>
+          <td>Reduce residuos</td><td>Disminuye tu basura doméstica</td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/suelo saludable.jpg" alt="Suelo"></td>
+          <td>Suelo saludable</td><td>Enriquece la tierra con nutrientes</td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/menos contaminacion.jpg" alt="Contaminación"></td>
+          <td>Menos contaminación</td><td>Evita emisiones de gases</td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/educacion.jpg" alt="Educación"></td>
+          <td>Educación ecológica</td><td>Aprendes y enseñas a reciclar</td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/ahorro.jpg" alt="Ahorro"></td>
+          <td>Ahorro económico</td><td>Ahorras en fertilizantes</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="catalogo">
+      <h2 class="catalogo-title">PRODUCTOS</h2>
+      <div class="catalogo-grid">
+        <div class="producto">
+          <img src="imagenes/tierra negra.jpg" alt="Tierra Negra con nutrientes naturales" />
+          <p><strong>TIERRA NEGRA CON NUTRIENTES NATURALES</strong></p>
+          <p>$75.00</p>
+          <p>Es tierra enriquesida lista para sembrar o transplantar.</p>
+          <div class="carrito-btn">🛒</div>
+        </div>
+
+        <div class="producto">
+          <img src="imagenes/bolsa.jpg" alt="Bolsa de composta organica" />
+          <p><strong>BOLSA DE COMPOSTA ORGANICA</strong></p>
+          <p>$85.00</p>
+          <p>Sirve como abono natural para plantas, huertos y jardines.</p>
+          <div class="carrito-btn">🛒</div>
+        </div>
+
+        <div class="producto">
+          <img src="imagenes/fertilizante.jpg" alt="Fertilizante líquido orgánico" />
+          <p><strong>FERTILIZANTE LÍQUIDO ORGÁNICO</strong></p>
+          <p>$90.00</p>
+          <p>Alimento líquido concentrado para regar las plantas.</p>
+          <div class="carrito-btn">🛒</div>
+        </div>
+
+        <div class="producto">
+          <img src="imagenes/madera.jpg" alt="Compostera casera de madera" />
+          <p><strong>COMPOSTERA CASERA DE MADERA</strong></p>
+          <p>$550.00</p>
+          <p>Contenedor ecológico para compostar al aire libre.</p>
+          <div class="carrito-btn">🛒</div>
+        </div>
+
+        <div class="producto">
+          <img src="imagenes/malla.jpg" alt="Malla antimoscas" />
+          <p><strong>MALLA ANTIMOSCAS</strong></p>
+          <p>$35.00</p>
+          <p>Cubre la compostera sin quitarle el aire.</p>
+          <div class="carrito-btn">🛒</div>
+        </div>
+
+        <div class="producto">
+          <img src="imagenes/pala.jpg" alt="Pala para compostar" />
+          <p><strong>PALA PARA COMPOSTAR</strong></p>
+          <p>$60.00</p>
+          <p>Para remover y mezclar la composta.</p>
+          <div class="carrito-btn">🛒</div>
+        </div>
+
+        <div class="producto">
+          <img src="imagenes/plastico.jpg" alt="Compostera de plástico" />
+          <p><strong>COMPOSTERA DE PLÁSTICO</strong></p>
+          <p>$420.00</p>
+          <p>Sirve para hacer composta en casa.</p>
+          <div class="carrito-btn">🛒</div>
+        </div>
+
+        <div class="producto">
+          <img src="imagenes/termometro.jpg" alt="Termómetro para composta" />
+          <p><strong>TERMÓMETRO PARA COMPOSTA</strong></p>
+          <p>$140.00</p>
+          <p>Mide la temperatura dentro de tu pila.</p>
+          <div class="carrito-btn">🛒</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Para mayor informacion:</h2>
+      <p>✉️ Correo: elizabeth82824@gmail.com</p>
+      <p>📱 <a href="https://wa.me/+52 7223674454" target="_blank" rel="noopener noreferrer">+52 722 367 4454</a></p>
+      <p>📍 Ubicación: San Gabriel Ixtla, Valle de Bravo, Estado de México</p>
+    </section>
+
+    <section id="registro">
+      <h2>Únete a nuestra maravillosa comunidad</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre" required />
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" placeholder="ejemplo@correo.com" required />
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" placeholder="Contraseña" required />
+
+        <button type="submit">Registrarse</button>
+      </form>
+    </section>
+
+    <section id="Justificacion">
+      <h2>Justificación del diseño</h2>
+      <p> El diseño de Tierra Viva está inspirado en la naturaleza, con una paleta de colores verdes suaves que transmiten frescura, vida y conexión con el medio ambiente.
+
+Se utilizó una estructura limpia y ordenada para facilitar la navegación del usuario, permitiendo que cualquier persona sin importar su edad pueda entender qué es la composta, cómo se hace y cómo puede aplicarla en su día a día.
+
+Las secciones están bien definidas, y el uso de imágenes refuerza visualmente el contenido, haciendo que la experiencia sea más atractiva y educativa.
+Además, se añadieron íconos y enlaces a redes sociales para fomentar la interacción y el alcance del proyecto.
+
+<p>Tierra Viva no solo informa, también inspira a actuar por un mundo más verde. 🌍💚</p>
+
+</p>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-flex">
+      <div>
+        <h3>Tierra Viva</h3>
+        <p>Proyectos escolares para CECYTEM DONATO GUERRA</p>
+        <p>Conectando naturaleza y conciencia 🌱</p>
+      </div>
+      <div>
+        <h3>Enlaces</h3>
+        <p><a href="#Inicio">Inicio</a></p>
+        <p><a href="#beneficios">Beneficios</a></p>
+        <p><a href="#catalogo">Productos</a></p>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <p><a href="mailto:elizabeth82824@gmail.com">elizabeth82824@gmail.com</a></p>
+        <p><a href="https://wa.me/5217223674454" target="_blank" rel="noopener noreferrer">7223674454</a></p>
+      </div>
+      <div>
+        <h3>Síguenos</h3>
+        <p>
+          <a href="https://www.facebook.com/Tierra Viva" target="_blank" rel="noopener noreferrer">
+            <img src="Facebook.jpg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/elizabeth_37.0" target="_blank" rel="noopener noreferrer">
+            <img src="Instagram.jpg" alt="Instagram" />
+          </a>
+          <a href="https://wa.me/5217223674454" target="_blank" rel="noopener noreferrer">
+            <img src="WhatsApp.jpg" alt="WhatsApp" />
+          </a>
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div class="footer-bottom">
+      <p>&copy; Tierra Viva 2025. BY ELI. Todos los derechos reservados. </p>
+      <a href="#top" class="subir-btn">↑ Subir</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
